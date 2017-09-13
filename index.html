@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="MARKER.css">
+</head>
+<body>
+	<div id="left" style="left: 0;"></div>
+	<div id="right" style="right: 0;"></div>
+	<div id="tanchu"></div>
+	<div class="header">
+		<div id="header-top">
+			<div class="header-top">
+				<div class="header-top-left">
+					<div class="left-sidebar">
+						<a href=""><img src="img/100.png"> English <i class="fa fa-angle-down"></i></a>
+						<div class="left-sidebar-div">
+							<ul>
+								<li><a href=""><img src="img/100.png"> English </a></li>
+								<li><a href=""><img src="img/101.png"> Arabic </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="right-sidebar">
+						<a href=""> US Dollar <i class="fa fa-angle-down"></i></a>
+						<div class="left-sidebar-div">
+							<ul>
+								<li><a href="">(€) Euro</a></li>
+								<li><a href="">(£) Pounds</a></li>
+								<li><a href="">($) US Dollar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header-top-right">
+					<ul onmouseleave="ulRemove('header-li',1,4)">
+						<li id="header-li1" onmouseover="liChange('header-li',1,4)" class="li-width">
+							<i class="fa fa-user-circle i-one" aria-hidden="true"></i>
+							<a class="fafa-a" href="">
+								My Account
+								<i class="fa fa-angle-down"></i>
+							</a>
+						</li>
+						<li  id="header-li2" onmouseover="liChange('header-li',2,4)">
+							<i class="fa fa-comment i-one" aria-hidden="true"></i>
+							<a class="fafa-a" href="">
+								Wish List (2)
+								<i class="fa fa-angle-down"></i>
+							</a>
+						</li>
+						<li  id="header-li3" onmouseover="liChange('header-li',3,4)">
+							<i class="fa fa-envelope i-one" aria-hidden="true"></i>
+							<a class="fafa-a" href="">
+								Checkout
+								<i class="fa fa-angle-down"></i>
+							</a>
+						</li>
+						<li  id="header-li4" onmouseover="liChange('header-li',4,4)">
+							<i class="fa fa-folder i-one" aria-hidden="true"></i>
+							<a class="fafa-a" href="">
+								Shopping Cart
+								<i class="fa fa-angle-down"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="header-centert">
+			<div id="header-centert-top">
+				<div class="header-center">
+					<div class="center-img">
+						<img src="img/102.png">
+					</div>
+					<div class="center-nav">
+						<form>
+							<div class="center-nav-left">
+								<select class="left-select">
+									<option>All Categories</option>
+									<option>Apparel</option>
+									<option>Cables  Connectors</option>
+									<option>Cameras  Photo</option>
+									<option>Flashlights & Lamps</option>
+									<option>Mobile Accessories</option>
+									<option>Video Games</option>
+									<option>Jewelry & Watches</option>
+								</select>
+							</div>
+							<input placeholder="Search" type="text" name="">
+							<button><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<div class="center-right">
+						<div>
+							<img src="img/103.png">
+						</div>
+						<span>My cart</span>
+						<p>2 item(s) - $1,262.00 </p>
+					</div>
+				</div>
+			</div>
+			<div id="header-centert-bottom">
+				<div class="header-centert-bottom">
+					<div class="centert-bottom-left">
+						<div id="centert-bottom-left" onclick="pullDownList()">
+							<div class="centert-bottom-left-div">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							All Categories
+							<i class="fa pull-right arrow-circle fa-chevron-circle-up"></i>
+							<div id="centert-bottom-nav" style="display: block;">
+								<ul>
+									<li class="li-nav li-nav-one">
+										<a href=""><img src="img/115.png"> Automotive & Motocrycle</a>
+										<b class="caret"><img src="img/116.png"></b>
+										<div class="li-nav-box">
+											<div class="li-nav-etui">
+												<div class="li-nav-etui-one">
+													<ul>
+														<li>
+															<a href="" class="li-nav-etui-a">Apparel</a>
+															<ul>
+																<li><a href="">Accessories for Tablet PC</a></li>
+																<li><a href="">Accessories for i Pad</a></li>
+																<li><a href="">Accessories for iPhone</a></li>
+																<li><a href="">Bags, Holiday Supplies</a></li>
+																<li><a href="">Car Alarms and Security</a></li>
+																<li><a href="">Car Audio & Speakers</a></li>
+															</ul>
+															<a href="" class="li-nav-etui-a">Cables & Connectors</a>
+															<ul>
+																<li><a href="">Cameras & Photo</a></li>
+																<li><a href="">Electronics</a></li>
+																<li><a href="">Outdoor & Traveling</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="li-nav-etui-one">
+													<ul>
+														<li>
+															<a href="" class="li-nav-etui-a">Camping & Hiking</a>
+															<ul>
+																<li><a href="">Earings</a></li>
+																<li><a href="">Shaving & Hair Removal</a></li>
+																<li><a href="">Salon & Spa Equipment</a></li>
+															</ul>
+															<a href="" class="li-nav-etui-a">Smartphone & Tablets</a>
+															<ul>
+																<li><a href="">Cameras & Photo</a></li>
+																<li><a href="">Bath & Body</a></li>
+																<li><a href="">Gadgets & Auto Parts</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="li-nav-etui-one">
+													<ul>
+														<li>
+															<a href="" class="li-nav-etui-a">Bags, Holiday Supplies</a>
+															<ul>
+																<li><a href="">Battereries & Chargers</a></li>
+																<li><a href="">Bath & Body</a></li>
+																<li><a href="">Headphones</a></li>
+																<li><a href="">Home Audio</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/108.png"> Electronic</a>
+									</li>
+									<li class="li-nav li-nav-two">
+										<a href=""><img src="img/105.png"> Sports & Outdoors</a>
+										<b class="caret"><img src="img/116.png"></b>
+										<div class="li-nav-box" style="width: 540px;">
+											<div class="li-nav-etui">
+												<div class="li-nav-etui-two">
+													<ul>
+														<li>
+															<a href="" class="li-nav-etui-a">Apparel</a>
+															<ul>
+																<li><a href="">Accessories for Tablet PC</a></li>
+																<li><a href="">Accessories for i Pad</a></li>
+																<li><a href="">Accessories for iPhone</a></li>
+																<li><a href="">Bags, Holiday Supplies</a></li>
+																<li><a href="">Car Alarms and Security</a></li>
+																<li><a href="">Car Audio & Speakers</a></li>
+															</ul>
+															<a href="" class="li-nav-etui-a">Cables & Connectors</a>
+															<ul>
+																<li><a href="">Cameras & Photo</a></li>
+																<li><a href="">Electronics</a></li>
+																<li><a href="">Outdoor & Traveling</a></li>
+															</ul>
+															<a href="" class="li-nav-etui-a">Cables & Connectors</a>
+															<ul>
+																<li><a href="">Cameras & Photo</a></li>
+																<li><a href="">Electronics</a></li>
+																<li><a href="">Outdoor & Traveling</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="li-nav-etui-two">
+													<img src="img/100.jpg">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="li-nav li-nav-three">
+										<a href=""><img src="img/104.png"> Health & Beauty</a>
+										<b class="caret"><img src="img/116.png"></b>
+										<div class="li-nav-box">
+											<div class="li-nav-etui">
+												<div class="li-nav-etui-one">
+													<ul>
+														<li>
+															<a href="" class="li-nav-etui-a">Car Alarms and Security</a>
+															<ul>
+																<li><a href="">Car Audio & Speakers</a></li>
+																<li><a href="">Gadgets & Auto Parts</a></li>
+																<li><a href="">Gadgets & Auto Parts</a></li>
+																<li><a href="">Headphones, Headsets</a></li>
+															</ul>
+															<a href="" class="li-nav-etui-a">Health & Beauty</a>
+															<ul>
+																<li><a href="">Home Audio</a></li>
+																<li><a href="">Helicopters & Parts</a></li>
+																<li><a href="">Outdoor & Traveling</a></li>
+																<li><a href="">Toys & Hobbies</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="li-nav-etui-one">
+													<ul>
+														<li>
+															<a href="" class="li-nav-etui-a">Electronics</a>
+															<ul>
+																<li><a href="">Earings</a></li>
+																<li><a href="">Salon & Spa Equipment</a></li>
+																<li><a href="">Shaving & Hair Removal</a></li>
+																<li><a href="">Smartphone & Tablets</a></li>
+															</ul>
+															<a href="" class="li-nav-etui-a">Sports & Outdoors</a>
+															<ul>
+																<li><a href="">Flashlights & Lamps</a></li>
+																<li><a href="">Fishing</a></li>
+																<li><a href="">FPV System & Parts</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="li-nav-etui-one">
+													<ul>
+														<li>
+															<a href="" class="li-nav-etui-a">More Car Accessories</a>
+															<ul>
+																<li><a href="">Lighter & Cigar Supplies</a></li>
+																<li><a href="">Mp3 Players & Accessories</a></li>
+																<li><a href="">Men Watches</a></li>
+																<li><a href="">Mobile Accessories</a></li>
+															</ul>
+															<a href="" class="li-nav-etui-a">Gadgets & Auto Parts</a>
+															<ul>
+																<li><a href="">Gift & Lifestyle Gadgets</a></li>
+																<li><a href="">Gift for Man</a></li>
+																<li><a href="">Gift for Woman</a></li>
+																<li><a href="">Gift for Woman</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="li-nav li-nav-four">
+										<a href=""><img src="img/104.png"> Smartphone & Tablets</a>
+										<b class="caret"><img src="img/116.png"></b>
+										<div class="li-nav-box" style="width: 270px;">
+											<div class="li-nav-etui">
+												<ul>
+													<li><a href="">Headphones, Headsets</a></li>
+													<li><a href="">Home Audio</a></li>
+													<li><a href="">Health & Beauty</a></li>
+													<li><a href="">Helicopters & Parts</a></li>
+													<li><a href="">Helicopters & Parts</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/109.png"> Flashlights & Lamps</a>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/106.png"> Camera & Photo</a>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/107.png"> Smartphone & Tablets</a>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/113.png"> Outdoor & Traveling Supplies</a>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/114.png"> Toys & Hobbies </a>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/110.png"> Jewelry & Watches</a>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/111.png"> Jewelry & Watches</a>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/111.png"> Bags, Holiday Supplies</a>
+									</li>
+									<li class="li-nav">
+										<a href=""><img src="img/115.png"> More Car Accessories</a>
+									</li>
+									<li class="li-nav">
+										<a class="li-nav-nav" href=""><i class="fa fa-plus-square-o"></i> More Car Accessories</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="centert-bottom-right">
+						<ul>
+							<li class="centert-bottom-right-li" style="background-color: #898989;">
+								<a href="">Home <b class="xiaojiantou"></b></a>
+								<div id="heng-nav">
+									<div class="heng-nav">
+										<div class="heng-nav-box">
+											<a href="">
+												<span><img src="img/101.jpg">
+													<span class="heng-nav-box-span">Read More</span>
+												</span>
+												<h3>Home page - (Default)</h3>
+											</a>
+										</div>
+										<div class="heng-nav-box">
+											<a href="">
+												<span><img src="img/102.jpg">
+													<span class="heng-nav-box-span">Read More</span>
+												</span>
+												<h3>Home page - Layout 2</h3>
+											</a>
+										</div>
+										<div class="heng-nav-box">
+											<a href="">
+												<span><img src="img/103.jpg">
+													<span class="heng-nav-box-span">Read More</span>
+												</span>
+												<h3>Home page - Layout 3</h3>
+											</a>
+										</div>
+										<div class="heng-nav-box">
+											<a href="">
+												<span><img src="img/104.jpg">
+													<span class="heng-nav-box-span">Read More</span>
+												</span>
+												<h3>Home page - Layout 4</h3>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="centert-bottom-right-li">
+								<a href="">Features <span class="label"> Hot</span><b class="xiaojiantou"></b></a>
+								<div id="heng-nav">
+									<div class="heng-nav">
+										<div class="heng-nav-box">
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+										<div class="heng-nav-box">
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+										<div class="heng-nav-box">
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+										<div class="heng-nav-box">
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="centert-bottom-right-li" style="position: relative;">
+								<a href="">Pages <span class="label"> Hot</span><b class="xiaojiantou"></b></a>
+								<div id="heng-nav-one">
+									<div class="heng-nav">
+										<div class="heng-nav-box" style="width: 50%;">
+											<ul>
+												<li><a href="">FAQ</a></li>
+												<li><a href="">Typography</a></li>
+												<li><a href="">Typography</a></li>
+												<li><a href="">Typography</a></li>
+												<li><a href="">Typography</a></li>
+											</ul>
+										</div>
+										<div class="heng-nav-box" style="width: 50%;">
+											<ul>
+												<li><a href="">Typography</a></li>
+												<li><a href="">Typography</a></li>
+												<li><a href="">Typography</a></li>
+												<li><a href="">Typography</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="centert-bottom-right-li">
+								<a href="">Categories <b class="xiaojiantou"></b></a>
+								<div id="heng-nav-two">
+									<div class="heng-nav">
+										<div class="heng-nav-box heng-nav-box-one">
+											<img src="img/105.jpg">
+										</div>
+										<div class="heng-nav-box heng-nav-box-one">
+											<img src="img/106.jpg">
+										</div>
+										<div class="heng-nav-box heng-nav-box-one">
+											<img src="img/107.jpg">
+										</div>
+										<div class="heng-nav-box heng-nav-box-one">
+											<img src="img/108.jpg">
+										</div>
+										<div class="heng-nav-box">
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+										<div class="heng-nav-box">
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+										<div class="heng-nav-box">
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+										<div class="heng-nav-box">
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="centert-bottom-right-li">
+								<a href="">Accessories <b class="xiaojiantou"></b></a>
+								<div id="heng-nav-two">
+									<div class="heng-nav">
+										<div class="heng-nav-box" style="width: 33.33%;">
+											<h2><a href="">Listing pages</a></h2>
+											<ul class="heng-nav-box-one">
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+										<div class="heng-nav-box" style="width: 33.33%;">
+											<h2><a href="">Listing pages</a></h2>
+											<ul class="heng-nav-box-one">
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 2 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+											<h2><a href="">Listing pages</a></h2>
+											<ul>
+												<li><a href="">Category Page 1 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+												<li><a href="">Category Page 3 </a></li>
+											</ul>
+										</div>
+										<div class="heng-nav-box" style="width: 33.33%;">
+											<h2><a href="">Listing pages</a></h2>
+											<div class="heng-nav-box-box">
+												<div class="heng-nav-box-box-left">
+													<img src="img/109.jpg">
+												</div>
+												<div class="heng-nav-box-box-right">
+													<h4><a href="">Filet Mign</a></h4>
+													<div class="box-xingxing">
+														<span><i class="fa fa-star fa-stack-1x"></i></span>
+														<span><i class="fa fa-star fa-stack-1x"></i></span>
+														<span><i class="fa fa-star fa-stack-1x"></i></span>
+														<span><i class="fa fa-star fa-stack-1x"></i></span>
+														<span><i class="fa fa-star fa-stack-1x"></i></span>
+													</div>
+													<p>$1,202.00</p>
+												</div>
+											</div>
+											<div class="heng-nav-box-box">
+												<div class="heng-nav-box-box-left">
+													<img src="img/120.jpg">
+												</div>
+												<div class="heng-nav-box-box-right">
+													<h4><a href="">Filet Mign</a></h4>
+													<div class="box-xingxing">
+														<span><i class="fa fa-star fa-stack-1x"></i></span>
+														<span><i class="fa fa-star fa-stack-1x"></i></span>
+														<span><i class="fa fa-star fa-stack-1x"></i></span>
+														<span><i class="fa fa-star fa-stack-1x"></i></span>
+														<span><i class="fa fa-star-o fa-stack-1x"></i></span>
+													</div>
+													<p>$1,202.00</p>
+												</div>
+											</div>
+											<div class="heng-nav-box-box">
+												<div class="heng-nav-box-box-left">
+													<img src="img/121.jpg">
+												</div>
+												<div class="heng-nav-box-box-right">
+													<h4><a href="">Filet Mign</a></h4>
+													<div class="box-xingxing">
+														<span><i class="fa fa-star-o fa-stack-1x"></i></span>
+														<span><i class="fa fa-star-o fa-stack-1x"></i></span>
+														<span><i class="fa fa-star-o fa-stack-1x"></i></span>
+														<span><i class="fa fa-star-o fa-stack-1x"></i></span>
+														<span><i class="fa fa-star-o fa-stack-1x"></i></span>
+													</div>
+													<p>$1,202.00</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="centert-bottom-right-li">
+								<a href="">Blog </b></a>
+							</li>
+							<li class="centert-bottom-right-li">
+								<a href="">Buy Theme! </b></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main-top">
+			<div class="main-top-box">
+				<div class="main-top-box-nav">
+					<h5>Top Search:</h5>
+					<ul>
+						<li><a href="">Acer,</a></li>
+						<li><a href="">APPLE,</a></li>
+						<li><a href="">Black,</a></li>
+						<li><a href="">Canon,</a></li>
+						<li><a href="">Cogs,</a></li>
+						<li><a href="">Confi</a></li>
+						<li><a href="">Kate,</a></li>
+						<li><a href="">Lor,</a></li>
+						<li><a href="">Product,</a></li>
+						<li><a href="">Zolof The Rock And Roll Destroyer</a></li>
+					</ul>
+				</div>
+				<div class="main-top-carousel">
+					
+
+
+					<div class="flexslider">
+						<ul class="slides">
+							<li style="background:url(images/3.png) 50% 0 no-repeat;"></li>
+							<li style="background:url(images/4.png) 50% 0 no-repeat;"></li>
+							<li style="background:url(images/5.png) 50% 0 no-repeat;"></li>
+						</ul>
+					</div>
+
+
+
+				</div>
+				<div class="main-top-caroused">
+					<ul>
+						<li><img src="img/122.jpg">
+							<span class="main-top-caroused-span"></span>
+						</li>
+						<li><img src="img/123.jpg">
+							<span class="main-top-caroused-span"></span>
+						</li>
+						<li><img src="img/124.jpg">
+							<span class="main-top-caroused-span"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="main-top-carousef">
+					<div class="main-top-carousef-box">
+						<div>
+							<a href=""><span class="ico-policy"></span> 90 day <br> money back </a>
+						</div>
+						<div>
+							<a href=""><span class="ico-policy"></span> 90 day <br> money back </a>
+						</div>
+						<div>
+							<a href=""><span class="ico-policy"></span> 90 day <br> money back </a>
+						</div>
+						<div>
+							<a href=""><span class="ico-policy"></span> 90 day <br> money back </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-center">
+			<div class="main-center-one">
+				<div class="center-one-nav">
+					<h3>Featured Product<span></span></h3>
+					<ul class="center-one-nav-ul">
+						<li id="one1" onclick="bomese('one',1,3)" class="xuanXiangKa">Jewelry & Watches</li>
+						<li id="one2" onclick="bomese('one',2,3)">Electronics</li>
+						<li id="one3" onclick="bomese('one',3,3)">Sports & Outdoors	</li>
+					</ul>
+					<div id="fanye">
+						<div id="fanye-left" onclick="qiehuan()"></div>
+						<div id="fanye-right" onclick="qiehuan1()"></div>
+					</div>
+				</div>
+				<div id="box">
+					<div id="box1"></div>
+					<div id="box2" style="height: 0px;"></div>
+					<div id="box3" style="height: 0px;"></div>
+				</div>
+			</div>
+			<div class="main-center-two">
+				<div class="center-two-left">
+					<div class="center-two-img">
+						<img src="img/133.png">
+						<div class="center-two-yy"></div>
+					</div>
+				</div>
+				<div class="center-two-left">
+					<div class="center-two-img" style="margin-bottom: 30px;">
+						<img src="img/134.png">
+						<div class="center-two-yy"></div>
+					</div>
+					<div class="center-two-img">
+						<img src="img/135.png">
+						<div class="center-two-yy"></div>
+					</div>
+				</div>
+				<div class="center-two-left">
+					<div class="center-two-img">
+						<img src="img/133.png">
+						<div class="center-two-yy"></div>
+					</div>
+				</div>
+			</div>
+			<div class="main-center-four">
+				<h3 class="main-four-h3">COLLECTIONS<span></span></h3>
+				<div>
+					<ul class="main-four-ul">
+						<li>
+							<div class="main-four-div">
+								<a href="" style="background-image: url(img/127.png)">Furniture</a>
+							</div>
+						</li>
+						<li>
+							<div class="main-four-div">
+								<a href="" style="background-image: url(img/128.png)">Furniture</a>
+							</div>
+						</li>
+						<li>
+							<div class="main-four-div">
+								<a href="" style="background-image: url(img/129.png)">Furniture</a>
+							</div>
+						</li>
+						<li>
+							<div class="main-four-div">
+								<a href="" style="background-image: url(img/130.png)">Furniture</a>
+							</div>
+						</li>
+						<li>
+							<div class="main-four-div">
+								<a href="" style="background-image: url(img/131.png)">Furniture</a>
+							</div>
+						</li>
+						<li>
+							<div class="main-four-div">
+								<a href="" style="background-image: url(img/127.png)">Furniture</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-footer">
+			<div class="main-footer-div">
+				<h3 class="main-four-h3">Hot Categories<span></span></h3>
+				<div class="main-footer-box" id="n">
+					<div class="main-footer-etui">
+						<div class="image-cat">
+							<img src="img/125.jpg">
+							<a class="image-cat-a" href="">View more</a>
+						</div>
+						<div class="text-div">
+							<h4><a href="">Automotive</a></h4>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="main-footer-etui">
+						<div class="image-cat">
+							<img src="img/126.jpg">
+							<a class="image-cat-a" href="">View more</a>
+						</div>
+						<div class="text-div">
+							<h4><a href="">Automotive</a></h4>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="main-footer-etui">
+						<div class="image-cat">
+							<img src="img/127.jpg">
+							<a class="image-cat-a" href="">View more</a>
+						</div>
+						<div class="text-div">
+							<h4><a href="">Automotive</a></h4>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="main-footer-etui">
+						<div class="image-cat">
+							<img src="img/128.jpg">
+							<a class="image-cat-a" href="">View more</a>
+						</div>
+						<div class="text-div">
+							<h4><a href="">Automotive</a></h4>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="main-footer-etui">
+						<div class="image-cat">
+							<img src="img/129.jpg">
+							<a class="image-cat-a" href="">View more</a>
+						</div>
+						<div class="text-div">
+							<h4><a href="">Automotive</a></h4>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="main-footer-etui">
+						<div class="image-cat">
+							<img src="img/130.jpg">
+							<a class="image-cat-a" href="">View more</a>
+						</div>
+						<div class="text-div">
+							<h4><a href="">Automotive</a></h4>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="main-footer-etui">
+						<div class="image-cat">
+							<img src="img/131.jpg">
+							<a class="image-cat-a" href="">View more</a>
+						</div>
+						<div class="text-div">
+							<h4><a href="">Automotive</a></h4>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="main-footer-etui">
+						<div class="image-cat">
+							<img src="img/132.jpg">
+							<a class="image-cat-a" href="">View more</a>
+						</div>
+						<div class="text-div">
+							<h4><a href="">Automotive</a></h4>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+							<div class="text-section">
+								<a href="">More Car Accessories</a>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="btn">
+			<i class="fa fa-angle-up"></i>
+			<span> Top </span>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-top">
+			<div class="footer-top-box">
+				<h3>Information</h3>
+				<ul>
+					<li><a href="">About Us</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Order history</a></li>
+					<li><a href="">Order information</a></li>
+				</ul>
+			</div>
+			<div class="footer-top-box">
+				<h3>Information</h3>
+				<ul>
+					<li><a href="">About Us</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Order history</a></li>
+					<li><a href="">Order information</a></li>
+				</ul>
+			</div>
+			<div class="footer-top-box">
+				<h3>Information</h3>
+				<ul>
+					<li><a href="">About Us</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Order history</a></li>
+					<li><a href="">Order information</a></li>
+				</ul>
+			</div>
+			<div class="footer-top-box">
+				<h3>Information</h3>
+				<ul>
+					<li class="footer-top-li"><i class="fa fa-map-marker"></i> My Company, 42 avenue des Champs Elysées 75000 Paris France</li>
+					<li class="footer-top-li"><i class="fa fa-envelope-o"></i> Email: <a href=""> sales@yourcompany.com</a></li>
+					<li class="footer-top-li"><i class="fa fa-phone"></i> Phone 1: 0123456789 <br>Phone 2: (123) 4567890</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-centre">
+			<hr class="hr">
+			<h4>Top Stores : Brand Directory | Store Directory</h4>
+			<ul class="footer-centre-ul">
+				<li><h5>MOST SEARCHED KEYWORDS MARKET:</h5><a href=""> Xiaomi Mi3 </a> | <a href=""> Digiflip Pro XT 712 Tablet </a>| <a href=""> Mi 3 Phones </a> | <a href=""> View all </a></li>
+				<li><h5>MOBILES:</h5><a href=""> Xiaomi Mi3 </a> | <a href=""> Digiflip Pro XT 712 Tablet </a>| <a href=""> Mi 3 Phones </a> | <a href=""> View all </a></li>
+				<li><h5>CAMERA:</h5><a href=""> Xiaomi Mi3 </a> | <a href=""> Digiflip Pro XT 712 Tablet </a>| <a href=""> Mi 3 Phones </a> | <a href=""> View all </a></li>
+				<li><h5>LAPTOPS:</h5><a href=""> Xiaomi Mi3 </a> | <a href=""> Digiflip Pro XT 712 Tablet </a>| <a href=""> Mi 3 Phones </a> | <a href=""> View all </a></li>
+				<li><h5>TVS:</h5><a href=""> Xiaomi Mi3 </a> | <a href=""> Digiflip Pro XT 712 Tablet </a>| <a href=""> Mi 3 Phones </a> | <a href=""> View all </a></li>
+				<li><h5>TABLETS:</h5><a href=""> Xiaomi Mi3 </a> | <a href=""> Digiflip Pro XT 712 Tablet </a>| <a href=""> Mi 3 Phones </a> | <a href=""> View all </a></li>
+				<li><h5>WATCHES:</h5><a href=""> Xiaomi Mi3 </a> | <a href=""> Digiflip Pro XT 712 Tablet </a>| <a href=""> Mi 3 Phones </a> | <a href=""> View all </a></li>
+				<li><h5>FOOTWEAR:</h5><a href=""> Xiaomi Mi3 </a> | <a href=""> Digiflip Pro XT 712 Tablet </a>| <a href=""> Mi 3 Phones </a> | <a href=""> View all </a></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/MARKER.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){ 
+			var box = document.getElementById('left');
+ 			var box1 = document.getElementById('right');
+ 			setTimeout(function dome(){
+ 				box.style.left = "-100%";
+ 				box1.style.right = "-100%";
+ 			},600);
+ 		}
+	</script>
+</body>
+</html>
